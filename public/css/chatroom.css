@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  line-height: 0.8;
+}
+.wrapper {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+}
+.message {
+  width: 100%;
+  min-height: 150px;
+}
+.me > div {
+  float: right;
+}
+.others > div {
+  float: left;
+}
+.sent-message {
+  box-shadow: 1px 3px 5px 0.5px lightgray;
+  border-radius: 15px;
+  padding: 15px;
+}
+.me .sent-message {
+  background-color: rgb(248, 248, 9);
+}
+.others .sent-message {
+  background-color: whitesmoke;
+}
+.sent-from {
+  font-weight: bolder;
+}
+.send-message {
+  padding-top: 20px;
+}
+.chats {
+  overflow-y: auto;
+}
